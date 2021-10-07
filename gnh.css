@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+@font-face {
+  font-family: font;
+  src: url('../fonts/BebasKai-Regular.otf');
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+
+/*:root represents the <html> element and is identical to the selector html,*/
+  :root{
+      /* background color after animation*/
+      --secondary-color: rgba(41, 102, 128, 0.652);
+      /*text color and animation color*/
+      --contrast-color: rgba(144, 161, 184, 0.857);
+  }
+  .parallax__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/*NAVIGATION BAR CSS Starts here*/
+/*title...Gamma Nu Eta*/
+.hero-text h2{
+    font-size: 1.25rem;
+    position:absolute;
+    left:2.5rem;
+    top: 2.5rem;
+}
+/* this is the navigation bar/links to the other pages*/
+.hero-text ul{
+    font-size: 0.75rem;
+    position:absolute;
+    right:2.5rem;
+    top:2.5rem;
+    text-decoration: none;
+}
+.hero-text ul li{
+    margin-left:2.5rem;
+    /*list-style-type CSS property sets the marker of a list item element like bullet points or arrows*/
+    float:left;
+    visibility: hidden;
+    text-decoration: none;
+}
+.hero-text ul li:nth-of-type(1){
+    visibility: visible;
+    text-decoration: none;
+}
+.hero-text ul li:nth-of-type(2){
+    visibility: visible;
+    text-decoration: none;
+}
+.hero-text ul li:nth-of-type(3){
+    visibility: visible;
+    text-decoration: none;
+}
+a{
+    color: #fff;
+    /*this is for the links to not have it underlined*/
+    text-decoration: none;
+}
+
+.btn{
+    border: 1.5px solid #fff;
+    border-radius: 10px;
+    padding:0.75rem 1.25rem;
+    /*specifies a transition effect with a slow start and end*/
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.btn:hover{
+    color:#000;
+    background:#fff;
+}
+/*nav bar ends*/
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: -10;
+    /* takes the color of the contrast color*/
+    background-color: var(--contrast-color);
+  }
+
+
+@media (min-width: 760px) {
+    .hero-text ul li {
+      visibility: visible;
+    }
+}
+
+
+
+/* this is the css for the text container*/
+.container{
+    display:flex;
+    /*this is the height of the text from the top of the screen*/
+    height: 100vh; 
+    /*justify-content property defines how the browser distributes space between and around content items*/
+    justify-content: space-around;  /*Distribute items evenly Items have a half-size spaceon either end */
+    align-items: center;
+    color: #fff;
+    animation: expand 0.8s ease forwards;
+    /*bk color same as secondary color*/
+    background-color: var(--secondary-color);
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    /* fast and then slow transition*/
+    transition: all .9s ease;
+}
+
+/*text should take only 50% of the screen... for the title */
+.container_content {
+    width: 50%;
+}
+/* paragraph "inner" text */ 
+.container_content_inner {
+    width: 80%;
+    /* move 80px from left*/
+    margin-left: 80px;
+}
+
+.container_outer_img{
+    margin: 50px;
+    width:50%;
+    overflow:hidden;
+}
+
+.container_img{
+    /*size of image*/
+    width: 100%;
+    /*specifies a transition effect with a slow start and end*/
+    /* forwards moves the image forward*/
+    animation: slideIn 2s ease-in-out forwards;
+}
+.paragraph{
+    /*the element will automatically adjust its height to allow its content to be displayed correctly.*/
+    height:auto;
+    overflow: hidden;
+}
+
+p{
+    /*height between lines*/
+    line-height: 30px;
+    transform: translateY(300px);
+    animation: slideUp .9s ease-in-out forwards .9s;
+}
+
+.title {
+    overflow: hidden;
+    height: auto;
+  }
+
+h1 {
+    font-size: 40px;
+    /*setting the h1 color similar to the contrast color*/
+    color: rgba(165, 216, 255, 0.652);
+    margin-bottom: 20px;
+    transform: translateY(100px);
+    /* making the animation time quicker than the paragraph to have the title show up first*/
+    animation: slideUp .9s ease forwards .6s;
+}
+  
+h3{
+  color: rgba(165, 216, 255, 0.652);
+  transform: translateY(100px);
+  /* making the animation time quicker than the paragraph to have the title show up first*/
+  animation: slideUp .9s ease forwards .6s;
+}
+hr{
+  transform: translateX(100px);
+  animation: slideIn .9s ease forwards .2s;
+}
+/* @keyframes CSS at-rule controls the intermediate steps in a CSS animation sequence */
+
+@keyframes slideIn {
+    0% {
+      transform: translateX(500px) scale(.2);
+    }
+    100% {
+      transform: translateX(0px) scale(1);
+    }
+  }
+  
+  @keyframes slideUp {
+    0% {
+      transform: translateY(300px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+}
+
+@keyframes expand {
+    0% {
+      transform: translateX(1400px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+  
