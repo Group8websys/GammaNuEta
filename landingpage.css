@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+/* With the @font-face rule, web designers do not have to use one of the "web-safe" fonts */
+@font-face {
+    font-family: font;
+    src: url('../fonts/BebasKai-Regular.otf');
+}
+
+/* globals */
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+/*body css*/
+body{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: rgb(9, 9, 9);
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-weight:600;
+}
+
+a{
+    color: #fff;
+    /*this is for the links to not have it underlined*/
+    text-decoration: none;
+}
+
+.btn{
+    border: 1.5px solid #fff;
+    border-radius: 10px;
+    padding:0.75rem 1.25rem;
+    /*specifies a transition effect with a slow start and end*/
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.btn:hover{
+    color:#000;
+    background:#fff;
+}
+
+.wrapper{
+    height:100vh;
+    /* any overflow in the x axis is hidden*/
+    overflow-x: hidden;
+    /* any overflow in the y axis is hidden until you scroll */
+    overflow-y:auto;
+    /*The perspective CSS property determines the distance between the z=0 plane and the user in order to give a 3D-positioned element some perspective.*/
+     perspective: 300px;
+}
+
+.parallax__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.hero-text {
+    background: linear-gradient( rgba(116, 207, 243, 0.364) 0%, rgba(158, 202, 232, 0.912) 86%, rgba(0, 0, 0, 0.693) 100%);
+    background-size: cover;
+    transform: translateZ(0) scale(1);
+    z-index: 7;
+}
+
+/*title...Gamma Nu Eta*/
+.hero-text h2{
+    font-size: 1.25rem;
+    position:absolute;
+    left:2.5rem;
+    top: 2.5rem;
+}
+/* this is the navigation bar/links to the other pages*/
+.hero-text ul{
+    font-size: 0.75rem;
+    position:absolute;
+    right:2.5rem;
+    top:2.5rem;
+    text-decoration: none;
+}
+.hero-text ul li{
+    margin-left:2.5rem;
+    /*list-style-type CSS property sets the marker of a list item element like bullet points or arrows*/
+    float:left;
+    visibility: hidden;
+    text-decoration: none;
+
+}
+.hero-text ul li:nth-of-type(3){
+    visibility: visible;
+    text-decoration: none;
+
+}
+
+
+
+/* social media icons */
+.social_media{
+    position: absolute;
+    left:2.5rem;
+    bottom:2.5rem;
+}
+.social_media i{
+    font-size: 1.25rem;
+    margin-right: 0.25rem;
+}
+
+/*INFO container for GNH information */
+.info_container {
+    transform: translateZ(0) scale(1);
+    /*Overlapping elements with a larger z-index cover those with a smaller one.*/
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+  }
+  
+  .info_container img {
+    width: 35%;
+    margin-bottom: 10.5rem;
+    /*image saturation*/
+    filter: saturate(0.65);
+  }
+  
+  .info_container h2,
+  .info_container p {
+    margin-bottom: 10.5rem;
+  }
+  
+
+
+  @media (min-width: 760px) {
+    .hero-text ul li {
+      visibility: visible;
+    }
+  
+  
+    .info-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 3rem;
+        align-items: center;
+        text-align: left;
+        
+      }
+    
+      .info-container img {
+        justify-self: end;
+        width: 75%;
+      }
+    
+      
+    }
+
+/* logo in right cornor*/
+#logo{ 
+	position:absolute;
+	margin-top: 50px;
+    margin-left: 40px;
+    
+} 
