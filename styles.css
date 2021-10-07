@@ -1,0 +1,55 @@
+div#newsletter  {
+    background-image: url("crop_logo2.png");
+    background-repeat: no-repeat;
+    background-size:38%;
+    background-position: right center;
+    border: 0.3vw solid rgb(9, 10, 53);
+    margin: auto;
+    width:95%;
+}
+
+#inside-newsletter {
+    margin: 11vw 0;
+    margin-left: 6vw;
+    width:40%;
+}
+
+#inside-newsletter h1 {
+    font-size:3vw;
+    margin-bottom:3vw;
+}
+#inside-newsletter h3 {
+    font-size:1.5vw;
+}
+#inside-newsletter p {
+    font-size:1.2vw;
+}
+#email {
+    border: none;
+    border-bottom: 2px solid rgb(187, 187, 187);
+    width:15vw;
+    height: 2vw; 
+    margin-right: 1.5vw; 
+    font-size: 1.2vw;
+    color: gray;
+}
+
+#email:focus {
+    outline: none;
+}
+
+#join {
+    border: none;
+    border-bottom: 2px solid rgb(187, 187, 187);
+    width:15vw;
+    height: 3vw; 
+    margin-right: 1.5vw; 
+    margin-top: 2vw;
+    font-size: 1.2vw;
+    color: white;
+    background-color:rgb(29, 61, 121);
+}
+
+#join:hover {
+    background-color:rgb(20, 40, 78);
+}
