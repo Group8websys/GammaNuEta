@@ -9,4 +9,4 @@ For the signup page, I made a similar signup page for last weeks lab, which drew
 For the activities page, I decided to gain a little more information about the company expose and tutoring by emailing Andrew, who sent me a powerpoint of the slides. I read through it and added some extra tidbits that I found besides the original lab description.
 I decided to create two divs, one for each activity. I was having trouble with overlap, so I looked it up on stackoverflow and found that using z-index can help me solve that problem.
 
-The navigaton bar was created by one of my team members, and uses ajax.
+The navigaton bar was created by one of my team members, and uses ajax. I also validated both my html and css codes.
