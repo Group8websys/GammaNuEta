@@ -1,11 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+@font-face {
+    font-family: font;
+    src: url('../fonts/BebasKai-Regular.otf');
+}
+body {
+    background-color: rgba(144, 161, 184, 0.857);
+    margin:0;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
 div#newsletter  {
-    background-image: url("crop_logo2.png");
+    background-image: url("../images/crop_logo2.png");
     background-repeat: no-repeat;
     background-size:38%;
     background-position: right center;
-    border: 0.3vw solid rgb(9, 10, 53);
-    margin: auto;
-    width:95%;
+    margin-top: 4vw;
+    font-family:Montserrat, Arial, Helvetica, sans-serif;
 }
 
 #inside-newsletter {
@@ -17,27 +31,38 @@ div#newsletter  {
 #inside-newsletter h1 {
     font-size:3vw;
     margin-bottom:3vw;
+    color: rgba(165, 216, 255, 0.652);
 }
+
 #inside-newsletter h3 {
     font-size:1.5vw;
+    margin-bottom:0.7vw;
+    color: white;
 }
+
 #inside-newsletter p {
     font-size:1.2vw;
+    color: white;
 }
+
+/* styles for email input box */
 #email {
     border: none;
     border-bottom: 2px solid rgb(187, 187, 187);
     width:15vw;
-    height: 2vw; 
+    height: 2.3vw; 
     margin-right: 1.5vw; 
+    margin-top:1.3vw;
     font-size: 1.2vw;
     color: gray;
 }
 
+/* remove outline when focus */
 #email:focus {
     outline: none;
 }
 
+/* style the join button */
 #join {
     border: none;
     border-bottom: 2px solid rgb(187, 187, 187);
@@ -53,3 +78,4 @@ div#newsletter  {
 #join:hover {
     background-color:rgb(20, 40, 78);
 }
+
