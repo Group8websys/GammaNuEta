@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+@font-face {
+    font-family: font;
+    src: url('../fonts/BebasKai-Regular.otf');
+}
+
+body {
+  background-color: rgba(144, 161, 184, 0.857);
+  margin:0;
+}
+
+/*Fixes logo img position to the right*/
+#logosu {
+  width: 60%;
+  height: auto;
+  position: absolute;
+  left: 120%;
+  top: 20%;
+}
+
+/*Fixes form position to left*/
+#signup_form {
+    width:50%;
+    position: absolute;
+    left: 40px;
+    top: 5px;
+}
+
+/*Styles form name similar to newsletter*/
+#signup_form h1 {
+    font-size:3vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    color: rgba(165, 216, 255, 0.652);
+}
+
+/*Styles inputs with type="text"*/
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 15px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/*styles submit button after newsletter page, except with rounded edges*/
+#join {
+  border: none;
+  border-bottom: 2px solid rgb(187, 187, 187);
+  border-radius: 15px;
+  width:15vw;
+  height: 3vw; 
+  margin-right: 1.5vw; 
+  margin-top: 2vw;
+  font-size: 1.2vw;
+  color: white;
+  background-color:rgb(29, 61, 121);
+}
+
+#join:hover {
+  background-color:rgb(20, 40, 78);
+}
+
+/*Fixes img position in activities page to the right*/
+#compexp {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  left: 120%;
+  top: 30%;
+}
+
+/*Positions text in activities page to the left*/
+#act_ev{
+  width:50%;
+  position: absolute;
+  left: 40px;
+  top: 5px;
+}
+
+/*Makes sure there is no overlap between divs*/
+#oneact{
+  z-index: 0;
+}
+#twoact{
+  z-index: 1;
+}
+
+/*Styles form name similar to newsletter*/
+#oneact h1 {
+  font-size:3vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  color: rgba(165, 216, 255, 0.652);
+}
+#twoact h1 {
+  font-size:3vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  color: rgba(165, 216, 255, 0.652);
+}
+
+/*Styles link to tutoring page*/
+#twoact a{
+  color: rgba(165, 216, 255, 0.652);
+}
+#twoact a:hover{
+  color: rgb(29, 61, 121);
+}
