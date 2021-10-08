@@ -17,3 +17,11 @@ Then I added another animation to the image, header, text, and line(hr). For the
 I also thought to put the signup button part of the navigation bar because its a big part of what the organization does, so it would make sense to add it for easier access when you land on the gnh site.
 
 Then lastly, I had an issue with my navigation bar links because they all had lines underneath like how generic links look like. I looked it up and after reading up about different text css, I found that text decoration was the main issue. I set that to none, and that removed all the lines underneath the links.
+
+Sources I used to get inspiration for this lab: 
+I found this very nice site that has cool designs for html, css, js, jquery, and bootstrap. 
+I looked at a lot of their different animations and css effects to get inspiration on how to make this site look like.
+https://freefrontend.com/css-slideshows/
+https://dev.to/davidepacilio/40-free-html-landing-page-templates-3gfp
+https://freefrontend.com/css-menu/
+https://freefrontend.com/css-parallax/
