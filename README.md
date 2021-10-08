@@ -1,7 +1,7 @@
 # GammaNuEta
 
 tharwa
-Ayahth23
+**Ayahth23**
 README ayah
 
 I very much enjoyed this lab. I was in charge of the homepage. I made a landingpage for the logo and social media and then a GNH page with the relevant information for the organization. 
@@ -25,3 +25,15 @@ https://freefrontend.com/css-slideshows/
 https://dev.to/davidepacilio/40-free-html-landing-page-templates-3gfp
 https://freefrontend.com/css-menu/
 https://freefrontend.com/css-parallax/
+
+
+-----------------------------------------------------------------------------------------------------
+**Jialin Yu**
+yuj14
+https://github.com/jlin9533/websyslabs
+
+For this lab, I am implementing the newsletter page. On the newsletter page, there is a sentence introducing Gamma Nu Eta's newsletter and the user can enter their email to the input field to join the newsletter maillist. I also wrote two javascript functions to display or hide a message in the input field. If the email field is empty and not focus by the user, a message "Enter your email" will show up. If the user focus on the field or enter information into the field, the message will disappear. Since we didn't implement any backend to the form, when the user click on "Join" the page will only refresh and no data will be stored.
+
+Also, I move the navigation bar that Ayah made to a json file and add ajax codes to make it display on each page. The navigation bar will appear on top of each of our pages so we feel like using ajax can avoid duplicate codes. In the json file, there are five properties and each of them has a value of contents for each of our pages.
+
+One of the problems that I faced during this lab was aligning the background images (GNH logo) on the newsletter page. And I found out W3school that there is a background-position CSS property can adjust the placement of the background image. Then I set the background position to right center and it displays as what i wanted. Another problem was I kept getting errors saying that my XMLHttpRequest is blocked by CORS policy and failed to load data after I implemented the ajax call. After a few minutes of researching, I figured that we need to be on a server to get data using ajax. Then I tried to open the site on localhost and it finally work out!
