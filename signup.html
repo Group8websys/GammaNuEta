@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang='en' dir="ltr">
+  <head>
+    <title>Gamma Nu Eta | Tutoring Signup</title>
+    <meta charset='UTF-8'> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/activities.css" type="text/css" rel="stylesheet"/>
+    <link href="css/nav_bar_transi.css" type="text/css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- navigation bar, pull from a json file -->
+      <div class="parallax__layer hero-text" id="nav_bar"></div>
+      <div id="signup">
+        <div id="signup_form">
+          <h1>Tutoring Signup</h1>
+          <img id="logosu" src="images/gnh_logo.png" alt="GNH Logo">
+          <!-- form for the user to sign up for tutoring -->
+          <form action="#" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Name">
+            <br>
+            <label for="email">Email</label>
+            <br>
+            <input type="text" id="email" name="email" placeholder="example@rpi.edu">
+            <br>
+            <label for="phone">Phone Number</label>
+            <br>
+            <input type="text" id="phone" name="phone" placeholder="(xxx) xxx-xxxx">
+            <br>
+            <label for="grade">Year Level</label>
+            <select id="grade" name="grade">
+              <option value="fresh">Freshman</option>
+              <option value="soph">Sophomore</option>
+              <option value="junior">Junior</option>
+              <option value="senior">Senior</option>
+              <option value="grad">Grad Student</option>
+            </select>
+            <label for="subject">Subject(s)</label>
+            <textarea id="subject" name="subject" placeholder="Write subject(s) you need help with..." style="height:50px"></textarea>
+            <input id="join" type="submit" value="Join">
+            <br><br>
+          </form> 
+        </div>
+      </div>
+    </div>     
+  </body>
+</html>
